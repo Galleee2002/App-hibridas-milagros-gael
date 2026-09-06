@@ -1,5 +1,8 @@
 const express = require("express");
+const { home } = require("../controllers/homeController.js");
 const router = express.Router();
+
+router.get("/", home);
 
 router.get("/entradas", (req, res) => {
     res.send("Página de entradas");
