@@ -1,5 +1,5 @@
 const { indexView } = require("../views/index.js");
-const { getAllMenuItems } = require("../services/menuService.js");
+const { getAllMenuItems } = require("../services/menuServices.js");
 
 async function home(req, res) {
   try {
