@@ -1,19 +1,10 @@
 const express = require("express");
-
 const app = express();
-const PORT = 3000;
 
-// Permite recibir JSON
-app.use(express.json());
+const routes = require("./src/routes/routes");
 
-// Ruta de prueba
-app.get("/", (req, res) => {
-  res.json({
-    message: "Hola desde Express "
-  });
-});
+app.use(routes);
 
-// Iniciar servidor
-app.listen(PORT, () => {
-  console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
+app.listen(3000, () => {
+    console.log("Servidor corriendo en http://localhost:3000");
 });
