@@ -1,6 +1,7 @@
-const express = require("express");
-const { home } = require("../controllers/homeController.js");
-const router = express.Router();
+import { Router } from "express";
+import { home } from "../controllers/homeController.js";
+
+const router = Router();
 
 router.get("/", home);
 
@@ -24,4 +25,4 @@ router.get("/bebidas", (req, res) => {
   res.send("Página de bebidas");
 });
 
-module.exports = router;
+export default router;

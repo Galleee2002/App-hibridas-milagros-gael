@@ -1,5 +1,5 @@
-function indexView() {
-    return `
+export function indexView() {
+  return `
       <!DOCTYPE html>
       <html lang="es">
         <head>
@@ -20,6 +20,4 @@ function indexView() {
         </body>
       </html>
     `;
-  }
-  
-  module.exports = { indexView };
+}

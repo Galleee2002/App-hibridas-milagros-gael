@@ -1,13 +1,11 @@
-const { getDB } = require("../config/db.js");
+import { getDB } from "../config/db.js";
 
-async function getAllMenuItems() {
+export async function getAllMenuItems() {
   const db = getDB();
   return db.collection("Menú").find({}).toArray();
 }
 
-async function getMenuBySection(section) {
+export async function getMenuBySection(section) {
   const db = getDB();
   return db.collection("Menú").find({ section }).toArray();
 }
-
-module.exports = { getAllMenuItems, getMenuBySection };
