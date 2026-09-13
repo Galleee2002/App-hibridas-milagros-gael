@@ -8,6 +8,6 @@ app.use(routes);
 
 async function start() {
   await connectDB();
-  app.listen(3333, () => console.log("OK en :3333"));
+  app.listen(3333, () => console.log("Terminal escuchando el 3333..."));
 }
 start();
