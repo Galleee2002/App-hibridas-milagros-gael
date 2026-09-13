@@ -1,0 +1,632 @@
+[
+  {
+    "name": "Bruschetta de tomate y albahaca",
+    "description": "Pan tostado con tomate fresco, ajo, albahaca y aceite de oliva.",
+    "link": "",
+    "img": "",
+    "ingredients": ["pan de masa madre", "tomate", "ajo", "albahaca", "aceite de oliva"],
+    "price": "$4.500",
+    "section": "entradas"
+  },
+  {
+    "name": "Carpaccio de ojo de bife",
+    "description": "Láminas finas de ojo de bife, rúcula silvestre, parmesano 24 meses y gotas de aceite de oliva.",
+    "link": "",
+    "img": "",
+    "ingredients": ["ojo de bife", "rúcula", "parmesano", "aceite de oliva", "limón"],
+    "price": "$18.500",
+    "section": "entradas"
+  },
+  {
+    "name": "Tartar de salmón y aguacate",
+    "description": "Salmón fresco cortado a cuchillo, aguacate cremoso, cebollín y toques de sésamo.",
+    "link": "",
+    "img": "",
+    "ingredients": ["salmón", "aguacate", "cebollín", "sésamo", "lima"],
+    "price": "$16.800",
+    "section": "entradas"
+  },
+  {
+    "name": "Burrata con tomates confitados",
+    "description": "Burrata cremosa, tomates confitados a baja temperatura y pesto de albahaca.",
+    "link": "",
+    "img": "",
+    "ingredients": ["burrata", "tomate cherry", "albahaca", "piñones", "aceite de oliva"],
+    "price": "$15.200",
+    "section": "entradas"
+  },
+  {
+    "name": "Vieiras selladas con manteca de cítricos",
+    "description": "Vieiras doradas, manteca clarificada de naranja y microgreens.",
+    "link": "",
+    "img": "",
+    "ingredients": ["vieiras", "manteca", "naranja", "microgreens", "sal marina"],
+    "price": "$22.000",
+    "section": "entradas"
+  },
+  {
+    "name": "Foie gras mi-cuit",
+    "description": "Foie gras mi-cuit, brioche tostado y reducción de vino de Oporto.",
+    "link": "",
+    "img": "",
+    "ingredients": ["foie gras", "brioche", "oporto", "sal", "pimienta"],
+    "price": "$24.500",
+    "section": "entradas"
+  },
+  {
+    "name": "Ensalada de hojas verdes y pera",
+    "description": "Mix de hojas de estación, pera conference, nueces y vinagreta de mostaza antigua.",
+    "link": "",
+    "img": "",
+    "ingredients": ["hojas verdes", "pera", "nueces", "mostaza", "vinagre balsámico"],
+    "price": "$9.800",
+    "section": "entradas"
+  },
+  {
+    "name": "Crema de calabaza asada",
+    "description": "Crema seda de calabaza asada, crumble de semillas y aceite de calabaza.",
+    "link": "",
+    "img": "",
+    "ingredients": ["calabaza", "crema", "semillas", "cebolla", "caldo de verduras"],
+    "price": "$8.900",
+    "section": "entradas"
+  },
+  {
+    "name": "Ostras con mignonette de chalota",
+    "description": "Ostras frescas servidas con mignonette de chalota y vinagre de champagne.",
+    "link": "",
+    "img": "",
+    "ingredients": ["ostras", "chalota", "vinagre de champagne", "pimienta", "limón"],
+    "price": "$21.000",
+    "section": "entradas"
+  },
+  {
+    "name": "Croquetas de jamón ibérico",
+    "description": "Croquetas cremosas de jamón ibérico con alioli de ajo confitado.",
+    "link": "",
+    "img": "",
+    "ingredients": ["jamón ibérico", "bechamel", "huevo", "pan rallado", "ajo"],
+    "price": "$11.200",
+    "section": "entradas"
+  },
+  {
+    "name": "Ceviche de corvina",
+    "description": "Corvina marinada en leche de tigre, maíz cancha y batata dulce.",
+    "link": "",
+    "img": "",
+    "ingredients": ["corvina", "limón", "cebolla morada", "maíz cancha", "batata"],
+    "price": "$14.500",
+    "section": "entradas"
+  },
+  {
+    "name": "Tartaleta de hongos silvestres",
+    "description": "Masa brisée, duxelles de hongos y espuma de parmesano.",
+    "link": "",
+    "img": "",
+    "ingredients": ["hongos silvestres", "masa brisée", "parmesano", "chalota", "tomillo"],
+    "price": "$13.800",
+    "section": "entradas"
+  },
+  {
+    "name": "Provoleta a las hierbas",
+    "description": "Provoleta grillada, orégano fresco, chimichurri suave y pan de campo.",
+    "link": "",
+    "img": "",
+    "ingredients": ["provolone", "orégano", "perejil", "ajo", "aceite de oliva"],
+    "price": "$10.500",
+    "section": "entradas"
+  },
+  {
+    "name": "Consomé de langosta",
+    "description": "Consomé clarificado de langosta, dados de verduras brunoise y aceite de cilantro.",
+    "link": "",
+    "img": "",
+    "ingredients": ["langosta", "zanahoria", "apio", "puerro", "cilantro"],
+    "price": "$19.800",
+    "section": "entradas"
+  },
+  {
+    "name": "Solomillo de wagyu a la parrilla",
+    "description": "Solomillo wagyu sellado, jugo reducido de carne y sal en escamas.",
+    "link": "",
+    "img": "",
+    "ingredients": ["wagyu", "manteca", "tomillo", "ajo", "sal en escamas"],
+    "price": "$52.000",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Rack de cordero con costra de hierbas",
+    "description": "Costillar de cordero, costra de hierbas provenzales y reducción de vino tinto.",
+    "link": "",
+    "img": "",
+    "ingredients": ["cordero", "romero", "tomillo", "pan rallado", "vino tinto"],
+    "price": "$38.500",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Lubina al horno con hinojo",
+    "description": "Lubina entera al horno, hinojo confitado y emulsión de limón.",
+    "link": "",
+    "img": "",
+    "ingredients": ["lubina", "hinojo", "limón", "aceite de oliva", "perejil"],
+    "price": "$34.200",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Risotto de hongos silvestres y trufa",
+    "description": "Arroz carnaroli, hongos de estación, parmesano y aceite de trufa negra.",
+    "link": "",
+    "img": "",
+    "ingredients": ["arroz carnaroli", "hongos", "trufa negra", "parmesano", "caldo de verduras"],
+    "price": "$29.800",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Pato confitado con salsa de naranja",
+    "description": "Muslo de pato confitado, piel crocante y gastrique de naranja amarga.",
+    "link": "",
+    "img": "",
+    "ingredients": ["pato", "naranja", "miel", "vinagre", "especias"],
+    "price": "$36.500",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Pollo de corral a las finas hierbas",
+    "description": "Suprema de pollo de corral, jus ligero y hierbas frescas del jardín.",
+    "link": "",
+    "img": "",
+    "ingredients": ["pollo de corral", "tomillo", "estragón", "manteca", "caldo de pollo"],
+    "price": "$24.500",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Filet de merluza negra",
+    "description": "Merluza negra sellada, beurre blanc de vino blanco y puerros glaseados.",
+    "link": "",
+    "img": "",
+    "ingredients": ["merluza negra", "vino blanco", "manteca", "puerro", "chalota"],
+    "price": "$41.000",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Ossobuco a la milanesa moderna",
+    "description": "Ossobuco braseado lento, gremolata y reducción de su propio jugo.",
+    "link": "",
+    "img": "",
+    "ingredients": ["ossobuco", "vino blanco", "tomate", "limón", "perejil"],
+    "price": "$35.500",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Langosta termidor revisada",
+    "description": "Cola de langosta gratinada, crema de mostaza Dijon y hierbas.",
+    "link": "",
+    "img": "",
+    "ingredients": ["langosta", "crema", "mostaza Dijon", "parmesano", "estragón"],
+    "price": "$48.000",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Bife de chorizo madurado",
+    "description": "Bife de chorizo dry-aged, sellado a fuego vivo y manteca de ajo negro.",
+    "link": "",
+    "img": "",
+    "ingredients": ["bife de chorizo", "ajo negro", "manteca", "romero", "sal marina"],
+    "price": "$39.500",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Ñoquis de papa al ragú de cordero",
+    "description": "Ñoquis caseros, ragú lento de cordero y pecorino rallado.",
+    "link": "",
+    "img": "",
+    "ingredients": ["papa", "harina", "cordero", "tomate", "pecorino"],
+    "price": "$26.800",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Ravioles de ricotta y espinaca",
+    "description": "Pasta fresca rellena, manteca noisette y salvia frita.",
+    "link": "",
+    "img": "",
+    "ingredients": ["ricotta", "espinaca", "pasta fresca", "manteca", "salvia"],
+    "price": "$25.500",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Salmón confitado en aceite de oliva",
+    "description": "Salmón confitado a baja temperatura, puré de arvejas y eneldo.",
+    "link": "",
+    "img": "",
+    "ingredients": ["salmón", "aceite de oliva", "arvejas", "eneldo", "limón"],
+    "price": "$32.000",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Carré de cerdo ibérico",
+    "description": "Carré de cerdo ibérico rosado, reducción de manzana y mostaza.",
+    "link": "",
+    "img": "",
+    "ingredients": ["cerdo ibérico", "manzana", "mostaza", "miel", "tomillo"],
+    "price": "$34.800",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Tagliatelle ai frutti di mare",
+    "description": "Tagliatelle frescos, mejillones, camarones y bisque ligera de mariscos.",
+    "link": "",
+    "img": "",
+    "ingredients": ["tagliatelle", "mejillones", "camarones", "ajo", "vino blanco"],
+    "price": "$31.200",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Berenjena asada con miso",
+    "description": "Berenjena caramelizada con miso, sésamo tostado y cebollín. Opción vegetariana.",
+    "link": "",
+    "img": "",
+    "ingredients": ["berenjena", "miso", "sésamo", "cebollín", "aceite de sésamo"],
+    "price": "$22.800",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Entrecot con salsa de pimienta verde",
+    "description": "Entrecot jugoso, salsa cremosa de pimienta verde y fondant de papas.",
+    "link": "",
+    "img": "",
+    "ingredients": ["entrecot", "pimienta verde", "crema", "cognac", "papa"],
+    "price": "$37.500",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Conejo al vino blanco",
+    "description": "Conejo estofado en vino blanco, aceitunas y hierbas mediterráneas.",
+    "link": "",
+    "img": "",
+    "ingredients": ["conejo", "vino blanco", "aceitunas", "romero", "ajo"],
+    "price": "$28.900",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Atún sellado con sésamo",
+    "description": "Lomo de atún sellado, costra de sésamo y salsa ponzu.",
+    "link": "",
+    "img": "",
+    "ingredients": ["atún", "sésamo", "ponzu", "jengibre", "cebollín"],
+    "price": "$35.800",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Canelones de espinaca y bechamel trufada",
+    "description": "Canelones clásicos revisitados con bechamel aromática de trufa.",
+    "link": "",
+    "img": "",
+    "ingredients": ["pasta", "espinaca", "ricotta", "bechamel", "trufa"],
+    "price": "$27.500",
+    "section": "plato-principal"
+  },
+  {
+    "name": "Puré de papas trufado",
+    "description": "Puré seda de papas, manteca y aceite de trufa negra.",
+    "link": "",
+    "img": "",
+    "ingredients": ["papa", "manteca", "crema", "trufa negra", "sal"],
+    "price": "$8.500",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Papas confitadas al romero",
+    "description": "Papas baby confitadas en aceite de oliva con romero fresco.",
+    "link": "",
+    "img": "",
+    "ingredients": ["papa baby", "aceite de oliva", "romero", "ajo", "sal marina"],
+    "price": "$7.200",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Verduras de estación a la plancha",
+    "description": "Selección de verduras grilladas con aceite de hierbas.",
+    "link": "",
+    "img": "",
+    "ingredients": ["zapallito", "berenjena", "pimiento", "espárragos", "aceite de oliva"],
+    "price": "$6.800",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Arroz pilaf de almendras",
+    "description": "Arroz basmati perfumado, almendras tostadas y manteca clarificada.",
+    "link": "",
+    "img": "",
+    "ingredients": ["arroz basmati", "almendras", "manteca", "cebolla", "caldo"],
+    "price": "$6.500",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Espárragos con hollandaise",
+    "description": "Espárragos verdes al vapor y salsa hollandaise clásica.",
+    "link": "",
+    "img": "",
+    "ingredients": ["espárragos", "yema", "manteca", "limón", "pimienta blanca"],
+    "price": "$9.800",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Ensalada de rúcula y parmesano",
+    "description": "Rúcula fresca, láminas de parmesano y vinagreta ligera.",
+    "link": "",
+    "img": "",
+    "ingredients": ["rúcula", "parmesano", "aceite de oliva", "limón", "pimienta"],
+    "price": "$6.200",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Polenta cremosa al parmesano",
+    "description": "Polenta suave, parmesano reggiano y manteca.",
+    "link": "",
+    "img": "",
+    "ingredients": ["polenta", "leche", "parmesano", "manteca", "sal"],
+    "price": "$7.000",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Ratatouille provenzal",
+    "description": "Verduras confitadas al estilo provenzal con hierbas de Provence.",
+    "link": "",
+    "img": "",
+    "ingredients": ["berenjena", "zapallito", "tomate", "pimiento", "hierbas de Provence"],
+    "price": "$7.500",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Papas soufflé",
+    "description": "Papas soufflé doblemente fritas, crocantes y aireadas.",
+    "link": "",
+    "img": "",
+    "ingredients": ["papa", "aceite", "sal", "pimienta"],
+    "price": "$8.900",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Quinoa salteada con vegetales",
+    "description": "Quinoa perlada, vegetales crunchy y vinagreta de cítricos.",
+    "link": "",
+    "img": "",
+    "ingredients": ["quinoa", "zanahoria", "zucchini", "naranja", "aceite de oliva"],
+    "price": "$7.800",
+    "section": "acompanamientos"
+  },
+  {
+    "name": "Soufflé de chocolate amargo",
+    "description": "Soufflé caliente de chocolate 70%, centro líquido y helado de vainilla.",
+    "link": "",
+    "img": "",
+    "ingredients": ["chocolate 70%", "huevo", "azúcar", "manteca", "vainilla"],
+    "price": "$12.500",
+    "section": "postres"
+  },
+  {
+    "name": "Crème brûlée de vainilla Bourbon",
+    "description": "Crema horneada de vainilla Bourbon con costra de caramelo crocante.",
+    "link": "",
+    "img": "",
+    "ingredients": ["crema", "yema", "azúcar", "vainilla Bourbon"],
+    "price": "$9.800",
+    "section": "postres"
+  },
+  {
+    "name": "Tarta de limón merengada",
+    "description": "Base sablée, curd de limón y merengue italiano flameado.",
+    "link": "",
+    "img": "",
+    "ingredients": ["limón", "huevo", "azúcar", "manteca", "harina"],
+    "price": "$10.500",
+    "section": "postres"
+  },
+  {
+    "name": "Tiramisú clásico",
+    "description": "Capas de mascarpone, café espresso y cacao amargo.",
+    "link": "",
+    "img": "",
+    "ingredients": ["mascarpone", "café", "bizcochos", "cacao", "huevo"],
+    "price": "$11.200",
+    "section": "postres"
+  },
+  {
+    "name": "Panna cotta de frutos rojos",
+    "description": "Panna cotta sedosa con coulis de frutos rojos de estación.",
+    "link": "",
+    "img": "",
+    "ingredients": ["crema", "gelatina", "azúcar", "frutos rojos", "vainilla"],
+    "price": "$9.200",
+    "section": "postres"
+  },
+  {
+    "name": "Fondant de chocolate y sal marina",
+    "description": "Bizcocho de chocolate con corazón fundente y escamas de sal.",
+    "link": "",
+    "img": "",
+    "ingredients": ["chocolate", "manteca", "huevo", "harina", "sal marina"],
+    "price": "$11.800",
+    "section": "postres"
+  },
+  {
+    "name": "Sorbete de mandarina",
+    "description": "Sorbete fresco de mandarina, textura sedosa y hierbabuena.",
+    "link": "",
+    "img": "",
+    "ingredients": ["mandarina", "azúcar", "agua", "hierbabuena"],
+    "price": "$7.500",
+    "section": "postres"
+  },
+  {
+    "name": "Cheesecake de frutos del bosque",
+    "description": "Cheesecake horneado, base de galleta y compota de berries.",
+    "link": "",
+    "img": "",
+    "ingredients": ["queso crema", "galleta", "frutos del bosque", "azúcar", "crema"],
+    "price": "$10.800",
+    "section": "postres"
+  },
+  {
+    "name": "Milhojas de dulce de leche",
+    "description": "Hojaldre crocante, dulce de leche casero y azúcar glas.",
+    "link": "",
+    "img": "",
+    "ingredients": ["hojaldre", "dulce de leche", "crema", "azúcar"],
+    "price": "$9.500",
+    "section": "postres"
+  },
+  {
+    "name": "Profiteroles con chocolate caliente",
+    "description": "Profiteroles rellenos de crema pastelera y baño de chocolate.",
+    "link": "",
+    "img": "",
+    "ingredients": ["masa choux", "crema pastelera", "chocolate", "manteca", "huevo"],
+    "price": "$11.500",
+    "section": "postres"
+  },
+  {
+    "name": "Mousse de chocolate blanco y maracuyá",
+    "description": "Mousse aireada de chocolate blanco con gelée de maracuyá.",
+    "link": "",
+    "img": "",
+    "ingredients": ["chocolate blanco", "maracuyá", "crema", "gelatina", "azúcar"],
+    "price": "$10.200",
+    "section": "postres"
+  },
+  {
+    "name": "Helado artesanal de vainilla",
+    "description": "Helado de vainilla natural, textura cremosa y vainas frescas.",
+    "link": "",
+    "img": "",
+    "ingredients": ["leche", "crema", "yema", "azúcar", "vainilla"],
+    "price": "$6.800",
+    "section": "postres"
+  },
+  {
+    "name": "Agua mineral con gas",
+    "description": "Agua mineral gasificada servida bien fría.",
+    "link": "",
+    "img": "",
+    "ingredients": ["agua mineral"],
+    "price": "$3.500",
+    "section": "bebidas"
+  },
+  {
+    "name": "Limonada de hierbabuena",
+    "description": "Limonada fresca prensada con hierbabuena y un toque de miel.",
+    "link": "",
+    "img": "",
+    "ingredients": ["limón", "hierbabuena", "miel", "agua"],
+    "price": "$4.800",
+    "section": "bebidas"
+  },
+  {
+    "name": "Jugo verde detox",
+    "description": "Manzana verde, pepino, apio y jengibre fresco.",
+    "link": "",
+    "img": "",
+    "ingredients": ["manzana verde", "pepino", "apio", "jengibre"],
+    "price": "$5.500",
+    "section": "bebidas"
+  },
+  {
+    "name": "Espresso doble",
+    "description": "Espresso intenso de grano de origen seleccionado.",
+    "link": "",
+    "img": "",
+    "ingredients": ["café espresso"],
+    "price": "$3.200",
+    "section": "bebidas"
+  },
+  {
+    "name": "Cappuccino",
+    "description": "Espresso, leche vaporizada y microespuma sedosa.",
+    "link": "",
+    "img": "",
+    "ingredients": ["café", "leche"],
+    "price": "$4.200",
+    "section": "bebidas"
+  },
+  {
+    "name": "Té earl grey",
+    "description": "Té negro aromatizado con bergamota, servido en tetera.",
+    "link": "",
+    "img": "",
+    "ingredients": ["té earl grey", "bergamota"],
+    "price": "$3.800",
+    "section": "bebidas"
+  },
+  {
+    "name": "Copa de Malbec reserva",
+    "description": "Malbec de guarda, notas de frutos negros y especias suaves.",
+    "link": "",
+    "img": "",
+    "ingredients": ["malbec"],
+    "price": "$9.500",
+    "section": "bebidas"
+  },
+  {
+    "name": "Copa de Chardonnay",
+    "description": "Chardonnay fresco con notas cítricas y final mineral.",
+    "link": "",
+    "img": "",
+    "ingredients": ["chardonnay"],
+    "price": "$8.800",
+    "section": "bebidas"
+  },
+  {
+    "name": "Champagne brut",
+    "description": "Copa de champagne brut, burbuja fina y toques de brioche.",
+    "link": "",
+    "img": "",
+    "ingredients": ["champagne"],
+    "price": "$16.000",
+    "section": "bebidas"
+  },
+  {
+    "name": "Cóctel Negroni",
+    "description": "Gin, vermut rosso y Campari, servido con cáscara de naranja.",
+    "link": "",
+    "img": "",
+    "ingredients": ["gin", "vermut", "campari", "naranja"],
+    "price": "$11.000",
+    "section": "bebidas"
+  },
+  {
+    "name": "Martini dry",
+    "description": "Gin y vermut seco, servido muy frío con oliva o twist de limón.",
+    "link": "",
+    "img": "",
+    "ingredients": ["gin", "vermut seco", "oliva"],
+    "price": "$11.500",
+    "section": "bebidas"
+  },
+  {
+    "name": "Cerveza artesanal blonde",
+    "description": "Blonde ale ligera, floral y refrescante.",
+    "link": "",
+    "img": "",
+    "ingredients": ["malta", "lúpulo", "agua", "levadura"],
+    "price": "$6.500",
+    "section": "bebidas"
+  },
+  {
+    "name": "Agua saborizada de pepino y limón",
+    "description": "Agua infusionada con pepino, limón y hierbabuena.",
+    "link": "",
+    "img": "",
+    "ingredients": ["agua", "pepino", "limón", "hierbabuena"],
+    "price": "$4.200",
+    "section": "bebidas"
+  },
+  {
+    "name": "Chocolate caliente belga",
+    "description": "Chocolate belga derretido con leche entera y un toque de canela.",
+    "link": "",
+    "img": "",
+    "ingredients": ["chocolate belga", "leche", "canela", "azúcar"],
+    "price": "$5.800",
+    "section": "bebidas"
+  }
+]
