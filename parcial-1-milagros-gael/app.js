@@ -4,6 +4,7 @@ import routes from "./src/routes/routes.js";
 
 const app = express();
 
+app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 async function start() {

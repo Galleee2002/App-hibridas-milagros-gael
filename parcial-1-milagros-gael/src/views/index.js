@@ -17,6 +17,7 @@ export function indexView() {
               <li><a href="/bebidas">Bebidas</a></li>
             </ul>
           </nav>
+          <a href="/menu">Administrar menú</a>
         </body>
       </html>
     `;
