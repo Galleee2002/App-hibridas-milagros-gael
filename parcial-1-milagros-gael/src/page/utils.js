@@ -83,8 +83,8 @@ export function createItemFormPage() {
             <input class="form-control" name="link" />
         </div>
         <div class="my-2" >
-            <label class="form-label" >Img: </label>
-            <input class="form-control" name="img" />
+            <label class="form-label" >Img (ruta en /public, ej: /foto.jpg): </label>
+            <input class="form-control" name="img" placeholder="/foto.jpg" />
         </div>
         <div class="my-2" >
             <label class="form-label" >Section: </label>
@@ -122,8 +122,8 @@ export function createItemFormEditPage(item) {
             <input class="form-control" name="link" value="${item.link}" />
         </div>
         <div class="my-2" >
-            <label class="form-label" >Img: </label>
-            <input class="form-control" name="img" value="${item.img}" />
+            <label class="form-label" >Img (ruta en /public, ej: /foto.jpg): </label>
+            <input class="form-control" name="img" value="${item.img}" placeholder="/foto.jpg" />
         </div>
         <div class="my-2" >
             <label class="form-label" >Section: </label>
