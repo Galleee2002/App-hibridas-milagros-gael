@@ -157,7 +157,7 @@ export function createSectionList(items) {
             <div>
                 <h2>${item.name}</h2>
                 <p>${item.description}</p>
-                <p>Precio: $${item.price}</p>
+                <p>Precio: ${item.price}</p>
                 <p>Ingredientes: ${item.ingredients}</p>
                 <p>Link: <a href="${item.link}">${item.link}</a></p>
                 <img src="${item.img}" alt="${item.name}" width="400" />

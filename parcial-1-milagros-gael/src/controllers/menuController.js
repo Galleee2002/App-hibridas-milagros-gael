@@ -3,6 +3,14 @@ import * as menuView from "../views/menuViews.js"
 
 const seccionesValidas = ["entradas", "plato-principal", "acompanamientos", "postres", "bebidas"]
 
+const titulosSeccion = {
+    entradas: "Entradas",
+    "plato-principal": "Plato principal",
+    acompanamientos: "Acompañamientos",
+    postres: "Postres",
+    bebidas: "Bebidas",
+}
+
 export async function getSection(req, res) {
     try {
         const section = req.params.section
@@ -11,7 +19,7 @@ export async function getSection(req, res) {
             return
         }
         const items = await menuService.getMenuBySection(section)
-        res.send(menuView.sectionList(section, items))
+        res.send(menuView.sectionList(titulosSeccion[section], items))
     } catch (error) {
         res.send(menuView.page404())
     }
