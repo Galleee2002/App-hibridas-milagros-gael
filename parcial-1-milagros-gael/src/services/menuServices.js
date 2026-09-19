@@ -39,20 +39,28 @@ export async function getItemById(id) {
     return item
 }
 
+function normalizeChefId(item) {
+    if (item?.chefId) item.chefId = new ObjectId(item.chefId)
+    return item
+}
+
 export async function saveItem(item) {
     const db = getDB()
+    normalizeChefId(item)
     await db.collection("Menú").insertOne(item)
     return item
 }
 
 export async function editItem(id, item) {
     const db = getDB()
+    normalizeChefId(item)
     await db.collection("Menú").replaceOne({ _id: new ObjectId(id) }, item)
     return item
 }
 
 export async function updateItem(id, item) {
     const db = getDB()
+    normalizeChefId(item)
     await db.collection("Menú").updateOne(
         { _id: new ObjectId(id) }, { $set: item }
     )
