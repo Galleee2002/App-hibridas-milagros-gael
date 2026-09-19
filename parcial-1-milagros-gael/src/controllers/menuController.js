@@ -27,7 +27,7 @@ export async function getSection(req, res) {
 
 export async function getMenu(req, res) {
     try {
-        const items = await menuService.getAllMenuItems()
+        const items = await menuService.getAllMenuItems({ limit: 1000, sort_order: "asc" })
         res.send(menuView.itemList(items))
     } catch (error) {
         res.send(menuView.page404())
