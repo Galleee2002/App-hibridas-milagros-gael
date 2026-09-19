@@ -1,8 +1,34 @@
 export function createPage(title, content) {
     let html = ""
     html += '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">'
-    html += `<title>${title}</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
- </head><body>`
+    html += '<meta name="viewport" content="width=device-width, initial-scale=1">'
+    html += `<title>${title}</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">`
+    html += `<style>
+        body { background-color: #171413; color: #D8CCB5; font-family: Georgia, "Palatino Linotype", Palatino, "Times New Roman", serif; }
+        .container-fluid { max-width: 1040px; margin: 0 auto; padding: 2.75rem 1.25rem 4.5rem; }
+        h1 { color: #F1E7D0; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; font-size: 2.35rem; border-bottom: 1px solid #6E1F2A; padding-bottom: 1rem; margin: 0 0 1.75rem; }
+        h2 { color: #F1E7D0; font-weight: 500; font-size: 1.7rem; letter-spacing: 0.02em; }
+        p { color: #D8CCB5; }
+        a { color: #6E1F2A; }
+        a:hover { color: #4A151D; }
+        hr { border: 0; border-top: 1px solid #6E1F2A; opacity: 0.7; margin: 2.5rem 0; }
+        .btn { border-radius: 0; letter-spacing: 0.12em; }
+        .btn-primary { background-color: #6E1F2A; border-color: #6E1F2A; color: #F1E7D0; }
+        .btn-primary:hover, .btn-primary:focus { background-color: #4A151D; border-color: #4A151D; color: #F1E7D0; }
+        .btn-secondary { background-color: #211B1A; border-color: #D8CCB5; color: #F1E7D0; }
+        .btn-secondary:hover, .btn-secondary:focus { background-color: #4A151D; border-color: #4A151D; color: #F1E7D0; }
+        .btn-warning { background-color: #211B1A; border-color: #B59A6A; color: #F1E7D0; }
+        .btn-warning:hover, .btn-warning:focus { background-color: #4A151D; border-color: #4A151D; color: #F1E7D0; }
+        .btn-danger { background-color: #6E1F2A; border-color: #6E1F2A; color: #F1E7D0; }
+        .btn-danger:hover, .btn-danger:focus { background-color: #4A151D; border-color: #4A151D; color: #F1E7D0; }
+        .table { --bs-table-bg: transparent; --bs-table-color: #F1E7D0; --bs-table-border-color: #4A151D; --bs-table-striped-bg: #211B1A; --bs-table-hover-bg: #211B1A; color: #F1E7D0; }
+        .table th { color: #F1E7D0; font-weight: 500; letter-spacing: 0.06em; }
+        .form-label { color: #D8CCB5; }
+        .form-control { background-color: #211B1A; border: 1px solid #4A151D; color: #F1E7D0; border-radius: 0; }
+        .form-control:focus { background-color: #211B1A; color: #F1E7D0; border-color: #6E1F2A; box-shadow: none; }
+        .form-control::placeholder { color: #D8CCB5; opacity: 0.55; }
+    </style>`
+    html += "</head><body>"
     html += "<div class='container-fluid' >"
     html += `<h1>${title}</h1>`
     html += content
@@ -52,9 +78,9 @@ export function createDetailPage(item) {
     html += `<p>Price: ${item.price}</p>`
     html += `<p>Ingredients: ${item.ingredients}</p>`
     html += `<p>Section: ${item.section}</p>`
-    html += `<p>Link: <a href="${item.link}">${item.link}</a></p>`
-    html += `<img src="${item.img}" alt="${item.name}" width="400" />`
-    html += "<a href='/menu' >Volver</a>"
+    if (item.link) html += `<p>Link: <a href="${item.link}">${item.link}</a></p>`
+    if (item.img) html += `<img src="${item.img}" alt="${item.name}" style="max-width: 100%; max-height: 380px; width: auto; height: auto; display: block; margin: 1.5rem 0;" />`
+    html += "<a href='/menu' class='btn btn-secondary my-3' >Volver</a>"
     return html
 }
 
@@ -93,7 +119,7 @@ export function createItemFormPage() {
         <button type="submit" class="btn btn-primary" >Guardar</button>                                             
     `
     html += "</form>"
-    html += "<a href='/menu' >Volver</a>"
+    html += "<a href='/menu' class='btn btn-secondary my-3' >Volver</a>"
     return html
 }
 
@@ -132,7 +158,7 @@ export function createItemFormEditPage(item) {
         <button type="submit" class="btn btn-primary" >Guardar</button>                                             
     `
     html += "</form>"
-    html += "<a href='/menu' >Volver</a>"
+    html += "<a href='/menu' class='btn btn-secondary my-3' >Volver</a>"
     return html
 }
 
@@ -145,7 +171,7 @@ export function createDetailDelete(item) {
     html += `<p>Link: ${item.link}</p>`
     html += `<button type="submit" class="btn btn-danger" >Borrar</button>`
     html += "</form>"
-    html += "<a href='/menu' >Volver</a>"
+    html += "<a href='/menu' class='btn btn-secondary my-3' >Volver</a>"
     return html
 }
 
@@ -153,14 +179,19 @@ export function createSectionList(items) {
     let html = ""
     html += '<a href="/" class="btn btn-secondary my-3" >Volver</a>'
     items.forEach(item => {
+        const imagen = item.img
+            ? `<img src="${item.img}" alt="${item.name}" style="max-width: 100%; max-height: 380px; width: auto; height: auto; display: block; margin: 1.5rem 0;" />`
+            : ""
+        const precio = item.price
+            ? `<p style="color: #F1E7D0; letter-spacing: 0.08em; margin-top: 1rem;">${item.price}</p>`
+            : ""
         html += `
-            <div>
+            <div class="my-2" style="padding: 1.25rem 0 0.5rem;" >
                 <h2>${item.name}</h2>
+                ${imagen}
                 <p>${item.description}</p>
-                <p>Precio: ${item.price}</p>
-                <p>Ingredientes: ${item.ingredients}</p>
-                <p>Link: <a href="${item.link}">${item.link}</a></p>
-                <img src="${item.img}" alt="${item.name}" width="400" />
+                ${precio}
+                <a class="btn btn-secondary mx-1" href="/menu/${item._id}" >Ver</a>
             </div>
             <hr />
         `
