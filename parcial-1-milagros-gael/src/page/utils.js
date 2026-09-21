@@ -3,12 +3,14 @@ export function createPage(title, content) {
     html += '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">'
     html += '<meta name="viewport" content="width=device-width, initial-scale=1">'
     html += `<title>${title}</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">`
+    html += '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">'
     html += `<style>
         body { background-color: #171413; color: #D8CCB5; font-family: Georgia, "Palatino Linotype", Palatino, "Times New Roman", serif; }
         .container-fluid { max-width: 1040px; margin: 0 auto; padding: 2.75rem 1.25rem 4.5rem; }
         h1 { color: #F1E7D0; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; font-size: 2.35rem; border-bottom: 1px solid #6E1F2A; padding-bottom: 1rem; margin: 0 0 1.75rem; }
         h2 { color: #F1E7D0; font-weight: 500; font-size: 1.7rem; letter-spacing: 0.02em; }
         p { color: #D8CCB5; }
+        .precio { color: #F1E7D0; font-family: "Cormorant Garamond", Georgia, serif; font-weight: 300; font-size: 1.35rem; font-variant-numeric: lining-nums tabular-nums; }
         a { color: #6E1F2A; }
         a:hover { color: #4A151D; }
         hr { border: 0; border-top: 1px solid #6E1F2A; opacity: 0.7; margin: 2.5rem 0; }
@@ -74,12 +76,23 @@ export function createListPage(lista) {
 
 export function createDetailPage(item) {
     let html = ""
-    html += `<p>Description: ${item.description}</p>`
-    html += `<p>Price: ${item.price}</p>`
-    html += `<p>Ingredients: ${item.ingredients}</p>`
-    html += `<p>Section: ${item.section}</p>`
-    if (item.link) html += `<p>Link: <a href="${item.link}">${item.link}</a></p>`
-    if (item.img) html += `<img src="${item.img}" alt="${item.name}" style="max-width: 100%; max-height: 380px; width: auto; height: auto; display: block; margin: 1.5rem 0;" />`
+    const imagen = item.img
+        ? `<img src="${item.img}" alt="${item.name}" class="img-fluid" style="max-height: 380px;" />`
+        : ""
+    html += `
+        <div class="row align-items-center my-3" >
+            <div class="col-md-6" >
+                ${imagen}
+            </div>
+            <div class="col-md-6" >
+                <p>Description: ${item.description}</p>
+                <p class="precio">Price: ${item.price}</p>
+                <p>Ingredients: ${item.ingredients}</p>
+                <p>Section: ${item.section}</p>
+                ${item.link ? `<p>Link: <a href="${item.link}">${item.link}</a></p>` : ""}
+            </div>
+        </div>
+    `
     html += "<a href='/menu' class='btn btn-secondary my-3' >Volver</a>"
     return html
 }
@@ -178,20 +191,23 @@ export function createDetailDelete(item) {
 export function createSectionList(items) {
     let html = ""
     html += '<a href="/" class="btn btn-secondary my-3" >Volver</a>'
-    items.forEach(item => {
+    items.forEach((item, index) => {
+        const imagenIzquierda = index % 2 === 0
         const imagen = item.img
-            ? `<img src="${item.img}" alt="${item.name}" style="max-width: 100%; max-height: 380px; width: auto; height: auto; display: block; margin: 1.5rem 0;" />`
+            ? `<img src="${item.img}" alt="${item.name}" style="max-width: 48%; max-height: 380px; width: auto; height: auto; display: block; margin: 1.5rem 0; flex-shrink: 0;" />`
             : ""
         const precio = item.price
-            ? `<p style="color: #F1E7D0; letter-spacing: 0.08em; margin-top: 1rem;">${item.price}</p>`
+            ? `<p class="precio mt-3">${item.price}</p>`
             : ""
         html += `
-            <div class="my-2" style="padding: 1.25rem 0 0.5rem;" >
-                <h2>${item.name}</h2>
+            <div class="my-2" style="padding: 1.25rem 0 0.5rem; display: flex; flex-direction: ${imagenIzquierda ? "row" : "row-reverse"}; align-items: center; gap: 1.5rem;" >
                 ${imagen}
-                <p>${item.description}</p>
-                ${precio}
-                <a class="btn btn-secondary mx-1" href="/menu/${item._id}" >Ver</a>
+                <div style="flex: 1; text-align: center;" >
+                    <h2>${item.name}</h2>
+                    <p>${item.description}</p>
+                    ${precio}
+                    <a class="btn btn-secondary mx-1" href="/menu/${item._id}" >Ver</a>
+                </div>
             </div>
             <hr />
         `
