@@ -4,8 +4,8 @@ export function itemList(items) {
     return createPage("menu", createListPage(items))
 }
 
-export function item(item) {
-    return createPage(item.name, createDetailPage(item))
+export function item(item, volver = "/") {
+    return createPage(item.name, createDetailPage(item, volver))
 }
 
 export function page404() {

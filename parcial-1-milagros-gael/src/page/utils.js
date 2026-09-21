@@ -74,7 +74,7 @@ export function createListPage(lista) {
     return html
 }
 
-export function createDetailPage(item) {
+export function createDetailPage(item, volver = "/") {
     let html = ""
     const imagen = item.img
         ? `<img src="${item.img}" alt="${item.name}" class="img-fluid" style="max-height: 380px;" />`
@@ -93,7 +93,7 @@ export function createDetailPage(item) {
             </div>
         </div>
     `
-    html += "<a href='/menu' class='btn btn-secondary my-3' >Volver</a>"
+    html += `<a href='${volver}' class='btn btn-secondary my-3' >Volver</a>`
     return html
 }
 

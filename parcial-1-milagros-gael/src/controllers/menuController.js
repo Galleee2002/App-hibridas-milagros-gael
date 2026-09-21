@@ -65,7 +65,7 @@ export async function editItemForm(req, res) {
 export async function saveItem(req, res) {
     try {
         const item = await menuService.saveItem(req.body)
-        res.send(menuView.item(item))
+        res.send(menuView.item(item, "/menu"))
     } catch (error) {
         res.send(menuView.page404())
     }
@@ -75,7 +75,7 @@ export async function editItem(req, res) {
     try {
         const id = req.params?.id
         const item = await menuService.editItem(id, req.body)
-        res.send(menuView.item(item))
+        res.send(menuView.item(item, "/menu"))
     } catch (error) {
         res.send(menuView.page404())
     }
@@ -95,7 +95,7 @@ export async function deleteItem(req, res) {
     try {
         const id = req.params?.id
         const item = await menuService.deleteItemLogico(id)
-        res.send(menuView.item(item))
+        res.send(menuView.item(item, "/menu"))
     } catch (error) {
         res.send(menuView.page404())
     }
