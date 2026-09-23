@@ -35,3 +35,17 @@ export async function getPlatosByChef(req, res) {
         res.status(500).json({ message: error.message })
     }
 }
+
+export async function assignPlato(req, res) {
+    try {
+        const id = req.params.id
+        const platoId = req.params.platoId
+        const chef = await chefService.getChefById(id)
+        if (!chef) return res.status(404).json({ message: "Chef no encontrado" })
+        const plato = await chefService.assignPlato(id, platoId)
+        if (!plato) return res.status(404).json({ message: "Plato no encontrado" })
+        res.status(200).json(plato)
+    } catch (error) {
+        res.status(500).json({ message: error.message })
+    }
+}
